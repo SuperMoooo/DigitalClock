@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-6');
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Gotham', sans-serif;
+    color: #ffffff;
+    font-size: 100px;
+}
+
+body {
+    background-image: url(imgs/bg/bg2.jpg);
+    background-size: 2000px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.box-container {
+    margin: 20px;
+}
