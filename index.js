@@ -5,14 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(() => {
         const date = new Date();
-        hours.innerHTML = date.getHours();
-        minutes.innerHTML = date.getMinutes();
+        confirmHours = date.getHours();
+        confirmMinutes = date.getMinutes();
         confirmSeconds = date.getSeconds();
 
         if (confirmSeconds < 10) {
             seconds.innerHTML = '0' + confirmSeconds;
         } else {
             seconds.innerHTML = confirmSeconds;
+        }
+
+        if (confirmMinutes < 10) {
+            minutes.innerHTML = '0' + confirmMinutes;
+        } else {
+            minutes.innerHTML = confirmMinutes;
+        }
+
+        if (confirmHours < 10) {
+            hours.innerHTML = '0' + confirmHours;
+        } else {
+            hours.innerHTML = confirmHours;
         }
     }, 1000);
 });
